@@ -2,14 +2,15 @@
 .intro-nav {
   .flex(@align: center);
   flex-direction: column;
-
+  background-color: @nav-bg;
+  border: 1px solid @nav-border;
   h1 {
     font-size: 4rem;
   }
 
   nav {
     .flex(@justify:space-between);
-    width: 44%;
+    width: 35em;
     margin: 1rem 0;
 
     a {
@@ -17,5 +18,8 @@
       color: @nav-font;
       font-size: 1.5rem;
     }
+  }
+  img {
+    width: 100%;
   }
 }
