@@ -160,30 +160,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.intro-nav {
+header .intro-nav {
+  position: fixed;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: #f6f6f6;
+  width: 100%;
+  max-width: 800px;
+  background-color: #dddddd;
   border: 1px solid #f1f1f1;
 }
-.intro-nav h1 {
+header .intro-nav h1 {
   font-size: 4rem;
 }
-.intro-nav nav {
+header .intro-nav nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 35em;
   margin: 1rem 0;
 }
-.intro-nav nav a {
+header .intro-nav nav a {
   text-decoration: none;
   color: #454a59;
   font-size: 1.5rem;
 }
-.intro-nav img {
+header img {
+  margin-top: 8rem;
   width: 100%;
 }
 footer {
