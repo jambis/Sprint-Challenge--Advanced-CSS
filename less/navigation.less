@@ -19,9 +19,38 @@ header {
       margin: 1rem 0;
 
       a {
-        text-decoration: none;
         color: @nav-font;
         font-size: 1.5rem;
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 8px;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 2px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background-color: @btn-bg-color;
+        }
+        &:before {
+          .hoverAnimation(0, -8px, 0, ease-out);
+        }
+        &:after {
+          .hoverAnimation(0, 4px, 0.2s, ease-out);
+        }
+        &:hover,
+        &:focus {
+          &:before {
+            .hoverAnimation(1, 0, 0.2s, ease-out);
+          }
+          &:after {
+            .hoverAnimation(1, 0, 02s, ease-out);
+            transition: transform 0s 0.2s ease-out, opacity 0s 0.2s;
+          }
+        }
       }
     }
   }

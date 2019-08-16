@@ -27,3 +27,9 @@
     color: @btn-bg-color;
   }
 }
+
+.hoverAnimation(@opacity, @y, @duration, @easetype) {
+  opacity: @opacity;
+  transform: translateY(@y);
+  transition: transform @duration @easetype, opacity @duration;
+}
