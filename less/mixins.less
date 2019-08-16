@@ -1,1 +1,29 @@
 // Mixins Here
+.flex (@justify: flex-start, @align: flex-start) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.img (@width, @height: auto, @radius: 0px) {
+  width: @width;
+  border-radius: @radius;
+  height: @height;
+}
+
+.buttonStyle(@widthLen, @heightLen) {
+  background-color: @btn-bg-color;
+  color: @porcelain;
+  width: @widthLen;
+  height: @heightLen;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.8rem;
+  border: 1px solid @btn-bg-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @porcelain;
+    color: @btn-bg-color;
+  }
+}

@@ -1,16 +1,14 @@
 // Navigation code here
 .intro-nav {
-  display: flex;
+  .flex(@align: center);
   flex-direction: column;
-  align-items: center;
 
   h1 {
     font-size: 4rem;
   }
 
   nav {
-    display: flex;
-    justify-content: space-between;
+    .flex(@justify:space-between);
     width: 44%;
     margin: 1rem 0;
 
